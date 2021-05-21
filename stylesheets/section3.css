@@ -1,0 +1,24 @@
+#boxRetang{
+    display: flex;
+}
+#retang{
+    position: relative;
+    z-index: -2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    height: 590px;
+}
+#retang > div{
+    width: 70%;
+}
+#retang::before{
+    content: ' ';
+    position: absolute;
+    clip-path: polygon(0 0, 90% 18%, 100% 89%, 0% 100%);
+    background-color: #e5ddc8;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}

@@ -1,0 +1,44 @@
+/*////////////////////// Seção 1 ///////////////////////////*/
+
+#section1 img{
+  max-width: 100%;
+}
+#section1 .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#section1 #menu{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px 20px;
+}
+#section1 #menu a{
+  position: relative;
+  border: 1px solid #e5ddc8;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  width: 170px;
+  height: 90px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+#section1 #menu a span:nth-of-type(1){
+  position: absolute;
+  background-color:#e5ddc8;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+#section1 #menu a span:nth-of-type(2){
+  z-index: 100;
+}

@@ -17,6 +17,22 @@ $(document).ready(function(){
 
   //////////////////////////////////////////////////////////////////
 
-  // Seu código abaixo
+  let ancMenu = document.querySelectorAll("#menu a");
+  
+  for (let i = 0; i < ancMenu.length; i++) {
+    ancMenu[i].addEventListener('mouseover', fnAncMenuOver);
+    ancMenu[i].addEventListener('mouseout', fnAncMenuOut);
+  }
+
+  function fnAncMenuOver(){
+    let span = this.querySelector('span');
+    this.style.border = "1px solid #e5ca8f"
+    span.style.backgroundColor = '#e5ca8f';
+  }
+  function fnAncMenuOut(){
+    let span = this.querySelector('span');
+    this.style.border = "1px solid #e5ddc8"
+    span.style.backgroundColor = '#e5ddc8';
+  }
 
 })
