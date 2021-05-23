@@ -35,51 +35,74 @@
 #section2 .container:nth-of-type(1) > div:nth-of-type(2) > img{
   width: 100%;
 }
-.faixa{
+#boxPontilhado{
+  display: flex;
+  min-height: 470px;
+}
+#boxPontilhado img{
+  max-width: 100%;
+}
+#box1{
+  position: relative;
+  height: 50px;
+  border-top: 2px dashed black;
+  border-left: 2px dashed black;
+  margin-top: 50px;
+  width: 20%;
+  margin-left: 70px;
+}
+#box1 > div:nth-of-type(1){
+  position: absolute;
+  top: 110%;
+  left: -30%;
+}
+#box1 > div:nth-of-type(1) > p:nth-of-type(1){
+  color: #004369;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+#box1 > div:nth-of-type(1) > p:nth-of-type(2){}
+
+#box2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 30%;
+}
+#box2 > div:nth-of-type(1){
+  position: relative;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  margin: 50px 0px;
-  border: 2px solid black;
-  padding: 25px 0px;
+  justify-content: center;
+  flex-direction: column;
 }
-.faixa iframe{
-  width:"800";
-  height:"600";
+#box2 > div:nth-of-type(1) > p:nth-of-type(1){font-weight: bold;color: #004369;font-size: 2rem;margin-bottom: 0px;}
+#box2 > div:nth-of-type(1) > p:nth-of-type(2){font-weight: bold;font-size: 1.8rem;}
+#box2 > div:nth-of-type(1) > div{
+  position: absolute;
+  top: 100%;
 }
-.pontilhado{
-  width: 20%;
-  height: 110px;
-  border-bottom: 2px dashed black;
-  flex-grow: 1;
-}
-.pontilhado:nth-of-type(1){
+#box2 > div:nth-of-type(1) > div > div{
   position: relative;
 }
-.pontilhado:nth-of-type(1)::before{
-  top: 101%;
-  left: 0%;
-  content: ' ';
-  width: 10px;
-  height: 60px;
+#box2 > div:nth-of-type(1) > div > div span{
   position: absolute;
-  border-left: 2px dashed black;
+  top: 0%;
+  left: 84%;
+  width: 200px;
 }
-#caixaPontilhado{
-  display: flex;
-  justify-content: center;
+#box2 > div:nth-of-type(2){
+  position: absolute;
+  top: 100%;
+  left: 0%;
 }
-#caixaPontilhado>div:nth-of-type(2){
-  display: flex;
-  padding: 25px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-#caixaPontilhado>div:nth-of-type(4){
-  width: 20%;
-}
-#caixaPontilhado>div:nth-of-type(4) img{
-    width: 100%;
+
+
+#box3{
+  height: 50px;
+  flex-grow: 1;
+  border-bottom: 2px dashed black;
 }
