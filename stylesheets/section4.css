@@ -1,0 +1,47 @@
+#section4{
+    margin-top: 100px;
+}
+#section4 img{
+    max-width: 100%;
+}
+#section4 .titulo{
+    text-align: center;
+}
+#sec4box1{
+    display: flex;
+    margin-top: 50px;
+}
+#sec4box1 > *{
+    width: 50%;
+}
+#sec4box1 > p:nth-of-type(1){
+    display: flex;
+}
+
+#section4 .retang > div{
+    width: 60%;
+}
+#section4 .retang{
+    margin-right: 50px;
+}
+#section4 .retang p{
+    line-height: 20px;
+}
+#section4 h4{
+    text-align: center;
+    width: 60%;
+    font-weight: bold;
+}
+#section4 .boxRetang > div:nth-of-type(2){
+    display: flex;
+    flex-direction: column;
+    margin-right: var(--direita);
+}
+#section4 .boxRetang > div:nth-of-type(2) > div{
+    display: flex;
+    flex-direction: column;
+}
+#section4 .boxRetang > div:nth-of-type(2) > div p{
+    display: flex;
+    margin-bottom: 0px;
+}

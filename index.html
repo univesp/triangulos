@@ -10,6 +10,7 @@
   <meta name="description" property="og:description"
   content="">
 
+
   <title>Univesp | Triângulos</title>
 
   <link rel="shortcut icon" href="https://apps.univesp.br/common/favicon.ico" type="image/x-icon"/>
@@ -170,14 +171,21 @@
     <section id = 'section3'>
       <!------------- Primeiro container ---------------->
       <div class='container'>
-        <h3 class='titulo'>O que é a Lei dos Cossenos?</h3>
+        <h3 class='titulo cosseno'>O que é a Lei dos Cossenos?</h3>
         <p>A Lei dos cossenos é uma relação trigonométrica usada para relacionar lados e ângulos de um triângulo qualquer, isto é, aquele triângulo que não possui, necessariamente, um ângulo reto, ou seja, os triângulos acutângulos e obtusângulos. Podemos dizer que essa lei nada mais é do que uma espécie de teorema de Pitágoras, mas que serve para qualquer triangulo.</p>
         <p>A lei dos cossenos é indicada para calcular a medida dos lados e os ângulos de um triângulo, a partir de alguns valores apresentados. Essa lei pode ser expressada da seguinte maneira:</p>
         <p class='blueGhost'>Lei dos cossenos: “o quadrado de um dos lados do triângulo é igual à soma dos quadrados dos outros dois lados, menos o dobro do produto desses dois lados pelo cosseno do ângulo formado entre eles”</p>
         <p>De forma algébrica, podemos expressar essa lei das seguintes formas:</p>
-        <p>a2=b2+c2−2.b.c.cosθ</p>
-        <p>a2=b2+c2−2.b.c.cosθ</p>
-        <p>b2=a2+c2−2.a.c.cosβ</p>
+        <div id='sec3box1'>
+          <div>
+            <p>$$a^2=b^2+c^2−2. b. c. \cos(\theta)$$</p>
+            <p>$$a^2=b^2+c^2−2. b. c. \cos(\theta)$$</p>
+            <p>$$b^2=a^2+c^2−2. a. c. \cos(\beta)$$</p>
+          </div>
+          <div>
+            <img src="assets/arte-08.png" alt="">
+          </div>
+        </div>
       </div>
       <!----------------- Faixa ----------------->
       <div class='faixa'>
@@ -187,7 +195,7 @@
       <div class='boxRetang'>
         <div class='retang'>
           <div>
-            <h4>Exemplo do uso da lei dos cossenos</h4>
+            <h4 class='flower azulEscuro'>Exemplo do uso da lei dos cossenos</h4>
             <p>José tem um sítio em Jundiai e utiliza em sua casa a água que é captada do Rio Capivari que passa por dentro de sua propriedade. Para utilizar essa água, ele utiliza uma bomba que leva a água do rio para sua caixa d’água na distância de 100 metros.</p>
             <p>A casa de José se encontra a 160 metros de distância da caixa d’água, e o ângulo formado pelas direções caixa d’água - bomba e caixa d’água - casa é de 60º.</p>
             <p>Se José pretender fazer uma ligação da bomba d’água direto para sua casa, quantos metros de encanamento são necessários?</p>
@@ -195,8 +203,13 @@
         </div>
         <div>
           <p>Esquema da situação:</p>
-          <p>Resolução: a2= 1002+ 1602−2 . 100 . 160 .cos60º a2= 1002+ 1602−2 . 100 . 160 .cos 60º a=140 metros</p>
           <img src="assets/arte-10.png" alt="">
+          <div>
+            <p>Resolução:</p>
+            <p>$$ a^2= 100^2+ 160^2 −2.100.160.cos(60º)$$</p>
+            <p>$$ a^2= 100^2+ 160^2 −2.100.160.cos(60º)$$</p>
+            <p>$$a=140\text{metros}$$</p>            
+          </div>
         </div>
       </div>
 
@@ -206,10 +219,17 @@
     <section id='section4'>
       <!-- Primeiro container -->
       <div class='container'>
-        <h3 class='titulo'>O que é a lei dos senos?</h3>
+        <h3 class='titulo seno'>O que é a lei dos senos?</h3>
         <p>A lei dos senos, ou também conhecida como Teorema dos senos é uma relação de proporção em qualquer triangulo inscrito em uma circunferência de raio r. Essa lei indica que a relação entre a medida do lado de um triângulo e o seno do ângulo oposto a esse lado será sempre constante. Vale ressaltar que essa lei só é válida para triângulos que não possui ângulo reto. A lei dos senos é representada pela seguinte fórmula:</p>
-        <p>a/sen(A) + b/sen(B) + c/sen(C)</p>
-        <p>A lei do seno utiliza relações que envolvem o seno do ângulo e a medida oposta ao ângulo.</p>
+        <div id='sec4box1'>
+          <div>
+            <p>$$ \frac{a}{\sin(A)} + \frac{b}{\sin(B)} + \frac{c}{\sin(C)}$$</p>
+            <p>A lei do seno utiliza relações que envolvem o seno do ângulo e a medida oposta ao ângulo.</p>
+          </div>
+          <div>
+            <img src="assets/arte-12.png" alt="">
+          </div>
+        </div>
       </div>
 
       <!----------------- Faixa ----------------->
@@ -220,16 +240,22 @@
       <div class='boxRetang'>
         <div class='retang'>
           <div>
-            <h4>Exemplo do uso da lei dos senos</h4>
+            <h4 class='flower azulEscuro'>Exemplo do uso da lei dos senos</h4>
             <p>Um grupo de engenheiros construirão uma ponte ligando dois lados separados pelo Rio Macaé na cidade de Macaé (Região baixada litorânea do Estado do Rio de Janeiro).</p>
             <p>A essa ponte daremos o nome de XY. Do ponto Z a Y têm a distância de 100 metros e ângulo formado por XZY é igual a 45º e do ponto Z, foi medido o ângulo ZXY igual a 30º.</p>
-            <p>Aplicando a Lei dos Senos, qual será o tamanho da ponte a ser construída pelos engenheiros? (Considere que 2 −−√=1,4142)</p>
+            <p>Aplicando a Lei dos Senos, qual será o tamanho da ponte a ser construída pelos engenheiros? (Considere que $\sqrt{2} = 1,4142$)</p>
           </div>
         </div>
         <div>
           <p>Esquema da situação:</p>
           <img src="assets/arte-19.png" alt="">
-          <p>Resolução: a2= 1002+ 1602−2 . 100 . 160 .cos60º a2= 1002+ 1602−2 . 100 . 160 .cos 60º a=140 metros</p>
+          <div>
+            <p>Resolução:</p>
+            <p>$$ a^2= 100^2+ 160^2 −2.100.160.\cos(60º) $$</p>
+            <p>$$ a^2= 100^2+ 160^2 −2.100.160.\cos(60º) $$</p>
+            <p>$$ a=140 \text{metros} $$</p>
+          </div>
+          
         </div>
       </div>      
     </section>
@@ -238,14 +264,30 @@
     <section id='section5'>
       <div class='container'>
         <h3 class='titulo'>Atividades</h3>
-        <p>Indicamos a seguir algumas atividades para você consolidar suas aprendizagens.</p>
-        <h4>Atividade 1</h4>
+        <p class='txtCenter'>Indicamos a seguir algumas atividades para você consolidar suas aprendizagens.</p>
+
+        <!-- Atividade 1 -->
+        <h4 class='subtitulo'>Atividade 1</h4>
         <p>Lei de senos e lei de cossenos</p>
         <p>O tiro com arco consiste em utilizar um arco e flechas para atingir um alvo. Esta atividade foi introduzida nos Jogos Olímpicos modernos em 1900, sendo disputado até 1920. A discrepância entre as regras aplicadas nos diferentes países fez com que a modalidade ficasse ausente do evento por várias décadas. A partir de 1972, com a adoção das regras da Federação Internacional de Tiro com Arco, (FITA), o tiro com arco voltou à condição de esporte olímpico1. Uma competidora tem três tentativas A, B e C (ver Figura de alvo de 80 cm para tiro a 18 m com arco reto).</p>
         <p>Determine as distâncias entre os pontos A, B e C, em centímetros.</p>
         <p>Suponha que a competidora precisa refazer o tiro B. Altere a posição do ponto B e determine as novas distâncias entre os pontos A, B e C, em centímetros. Nota. Existe mais de uma resposta.</p>
         <p>Nota. Utilize as leis de senos, cossenos ou tangentes na resolução</p>
+        <div>
+          <img src="assets/arte-15.png" alt="">
+        </div>
+      </div>  
+
+      <div class='container'>
+        <div>
+          <button class='colBtn collapsed' data-toggle="collapse" data-target="#colapse1">Botao Colapse</button>
+          <div id="colapse1" class='collapse colContent'>Conteúdo Collapse</div>
+        </div>
       </div>
+
+        <!-- Atividade 2 -->
+
+      
     </section>
     
     <!-- Atividades -->
@@ -394,7 +436,7 @@
   <script type="text/javascript" src="javascripts/events.js"></script>
 
   <!-- MathJax. Descomente se for utilizar. Caso contrário, remova. -->
-  <!-- <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
   <!-- Analytics. Remova em caso de reutilização do REA -->
   <script src="https://apps.univesp.br/common/analytics.js"></script>

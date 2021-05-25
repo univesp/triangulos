@@ -1,6 +1,86 @@
+:root {
+    --direita: calc((100% - 1140px) / 2);
+}
+@media (max-width:1200px) {
+    :root {
+        --direita: calc((100% - 960px) / 2);
+    }    
+}
+@media (max-width:992px) {
+    :root {
+        --direita: calc((100% - 720px) / 2);
+    }    
+}
+@media (max-width:768px) {
+    :root {
+        --direita: calc((100% - 540px) / 2);
+    }    
+}
+@media (max-width:576px) {
+    :root {
+        --direita: 0px;
+    }
+}
+@media (max-width:420px) {
+    :root {
+        --direita: 0px;
+    }
+}
+@media (max-width:320px) {
+    :root {
+        --direita: 0px;
+    }
+}
+
+.boxRetang{
+    display: flex;
+}
+.txtCenter{
+    text-align: center;
+}
+.retang{
+    position: relative;
+    z-index: -2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    height: 590px;
+}
+.retang > div{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.retang::before{
+    content: ' ';
+    position: absolute;
+    clip-path: polygon(0 0, 90% 18%, 100% 89%, 0% 100%);
+    background-color: #e5ddc8;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
 .titulo{
     font-family: 'Indie Flower', cursive;
     color: #1b9da1;
+}
+.subtitulo{
+    color:#db1f48;
+    font-weight: bold;
+}
+.subtitulo::before{
+    content: ' ';
+    position: absolute;
+    left: 0%;
+    width: 20px;
+    clip-path: polygon(0 0, 0% 100%, 100% 50%);
+    background-color: #01949a;
+    height: 80px;
+}
+.azulEscuro{
+    color: #01456b;
 }
 .flower{
     font-family: 'Indie Flower', cursive;
@@ -45,4 +125,48 @@
     position: absolute;
     top: 100%;
     transform: rotate(180deg);
+}
+.cosseno{
+    position: relative;
+}
+.cosseno::before{
+    position: absolute;
+    content: url(../assets/arte-07.png);
+    top: -70px;
+    left: 26%;
+}
+.seno{
+    position: relative;
+}
+.seno::before{
+    position: absolute;
+    content: url(../assets/arte-07.png);
+    top: -70px;
+    left: 56%;
+}
+.colBtn{
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    width: 100%;
+    border: 1px solid black;
+    border-bottom: 0px;
+    box-sizing: content-box;
+}
+.colBtn.collapsed{
+    border-bottom: 1px solid black;
+}
+.colBtn:focus {
+    outline: none;
+    box-shadow: none;
+}
+.colContent{
+    border: 1px solid black;
+    border-top: 0px;
+    box-sizing: content-box;
+    width: 100%;
 }

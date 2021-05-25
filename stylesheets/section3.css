@@ -1,24 +1,51 @@
-.boxRetang{
+#section3 img{
+    max-width: 100%;
+}
+#section3 .titulo{
+    text-align: center;
+}
+#sec3box1{
     display: flex;
+    margin-top: 25px;
 }
-.retang{
-    position: relative;
-    z-index: -2;
+#sec3box1 > div:nth-of-type(1){
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 800px;
-    height: 590px;
+    flex-direction: column;
+    align-items: flex-start;
 }
-.retang > div{
-    width: 70%;
+#sec3box1 p{
+    display: inline-block;
+    margin-bottom: 0px;
 }
-.retang::before{
-    content: ' ';
-    position: absolute;
-    clip-path: polygon(0 0, 90% 18%, 100% 89%, 0% 100%);
-    background-color: #e5ddc8;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+#sec3box1 > *{
+    width: 50%;
+}
+#section3 .flower{
+    width: 50%;
+    text-align: center;
+    font-weight: bold;
+}
+#section3 .retang p{
+    line-height: 20px;
+}
+#section3 .retang{
+    margin-right: 40px;
+}
+#section3 .retang > div{
+    width: 60%;
+}
+#section3 .boxRetang > div:nth-of-type(2){
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    justify-content: space-evenly;
+    margin-right: var(--direita);
+}
+#section3 .boxRetang > div:nth-of-type(2) > div{
+    display: flex;
+    flex-direction: column;
+}
+#section3 .boxRetang > div:nth-of-type(2) p{
+    display: flex;
+    margin-bottom: 0px;
 }

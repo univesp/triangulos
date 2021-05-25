@@ -17,6 +17,7 @@ $(document).ready(function(){
 
   //////////////////////////////////////////////////////////////////
 
+
   let ancMenu = document.querySelectorAll("#menu a");
   
   for (let i = 0; i < ancMenu.length; i++) {
