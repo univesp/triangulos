@@ -209,3 +209,12 @@ nav .nav-link {
     transform: rotate(90deg);
     transition: 0.2s;
 }
+
+@media (max-width:576px) {
+    .seno::before {
+        content: " ";
+    }
+    .cosseno::before {
+        content: " ";
+    }
+}

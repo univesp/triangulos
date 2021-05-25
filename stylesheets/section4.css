@@ -1,4 +1,3 @@
-#section4{display: none;}
 #section4{
     margin-top: 100px;
 }
@@ -37,6 +36,7 @@
     display: flex;
     flex-direction: column;
     margin-right: var(--direita);
+    justify-content: space-between;
 }
 #section4 .boxRetang > div:nth-of-type(2) > div{
     display: flex;
@@ -45,4 +45,76 @@
 #section4 .boxRetang > div:nth-of-type(2) > div p{
     display: flex;
     margin-bottom: 0px;
+}
+
+@media (max-width:1200px) {
+    #section4 h4 {
+        width: 70%;
+    }
+}
+@media (max-width:992px) {
+    #sec4box1{
+        flex-direction: column;
+    }
+    #sec4box1 > div:nth-of-type(1){
+        margin-bottom: 50px;
+    }
+    #sec4box1 > * {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #section4 .retang > div {
+        width: 80%;
+    }
+    #section4 h4 {
+        width: 90%;
+    }
+    #section4 .retang::before {
+        clip-path: polygon(0 0, 90% 8%, 100% 89%, 0% 100%);
+    }
+}
+
+@media (max-width:768px) {
+    #section4 .boxRetang{
+        flex-direction: column;
+    }
+    #section4 .retang{
+        height: 400px;
+        padding: 0px 15px;
+        width: 100%;
+    }
+    #section4 .boxRetang > div:nth-of-type(2) {
+        padding: 0px 15px;
+        margin-top: 50px;
+        width: 100%;
+    }
+    #section4 .retang::before {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+    #section4 h4 {
+        width: 100%;
+    }
+    #section4 .boxRetang > div:nth-of-type(2) > div {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width:576px) {
+    #section4 .retang > div {
+        width: 90%;
+    }
+    #section4 .retang {
+        height: 440px;
+    }
+}
+
+@media (max-width: 420px) {
+    #section4 .boxRetang > div:nth-of-type(2) > div {
+        overflow-x: scroll;
+    }
+    #section4 .retang {
+        height: 500px;
+    }
 }

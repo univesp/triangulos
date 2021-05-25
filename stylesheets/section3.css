@@ -69,6 +69,9 @@
     #section3 .retang > div {
         width: 80%;
     }
+    #section3 .boxRetang img {
+        max-width: 310px;
+    }
 }
 
 @media (max-width:768px) {
@@ -110,6 +113,9 @@
     #section3 .boxRetang > div:nth-of-type(2) > p{
         margin-bottom: 20px;
     }
+    #section3 .boxRetang img {
+        max-width: 100%;
+    }
 }
 
 @media (max-width:576px) {
@@ -122,8 +128,19 @@
     #section3 .retang{
         width: 100%;
     }
+    #section3 .retang::before {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    }
     #section3 .boxRetang > div:nth-of-type(2) {
         width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    #section3 .boxRetang img {
+        max-width: 100%;
+    }
+    #section3 .flower {
+        width: 80%;
     }
 }
 
@@ -133,5 +150,14 @@
     }
     #sec3box1 img {
         width: 100%;
-    }    
+    }
+    #section3 .flower {
+        width: 100%;
+    }
+    #section3 .retang {
+        height: 570px;
+    }
+    #section3 .boxRetang > div:nth-of-type(2) > div {
+        overflow-x: scroll;
+    }        
 }
