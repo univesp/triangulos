@@ -65,7 +65,7 @@
       <div class="logo">
         <a class="pularNavegacao" href="#conteudoPrincipal">Pular para Conteúdo Principal</a>
         <a href="https://univesp.br/" target="_blank">
-          <img src="https://apps.univesp.br/common/colorida-positiva.svg" alt="Link para site institucional. Logotipo da universidade formado pela palavra Univesp, sendo a letra V estilizada.">
+          <img src="https://apps.univesp.br/common/traco-negativa.svg" alt="Link para site institucional. Logotipo da universidade formado pela palavra Univesp, sendo a letra V estilizada.">
           <!-- outras opções de img src: colorida-negativa.svg, traco-positiva.svg, traco-negativa.svg -->
         </a>
       </div>
@@ -122,13 +122,15 @@
     <!-- O que é o teorema de Pitágoras -->
     <section id = 'section2'>
       <div class='container'>
+        <h3 class='titulo'>O que é o Teorema de Pitágoras?</h3>
         <div>
-          <h3 class='titulo'>O que é o Teorema de Pitágoras?</h3>
-          <p>O <b>Teorema de Pitágoras</b> é uma expressão matemática que consegue relacionar todos os lados de um triângulo retângulo (catetos e hipotenusa). Lembramos que esse teorema não é válido para os triângulos obtusângulo e acutângulo. Todo triângulo retângulo possui um ângulo de reto, ou seja, um ângulo de 90º. O lado oposto ao ângulo reto é chamado de hipotenusa e os demais lados catetos. Outra característica importante a ser mencionar é que a hipotenusa é o maior lado neste tipo de triângulo.</p>
-          <p class='blueGhost'>O Teorema de Pitágoras pode ser expresso da seguinte forma: o quadrado da hipotenusa é igual à soma dos quadrados dos catetos. Na forma algébrica, essa expressão fica da seguinte forma: h2=a2+b2 , onde h é a hipotenusa e a e b são os catetos.</p>
-        </div>
-        <div>
-          <img src="assets/arte-03.png" alt="">
+          <div>
+            <p>O <b>Teorema de Pitágoras</b> é uma expressão matemática que consegue relacionar todos os lados de um triângulo retângulo (catetos e hipotenusa). Lembramos que esse teorema não é válido para os triângulos obtusângulo e acutângulo. Todo triângulo retângulo possui um ângulo de reto, ou seja, um ângulo de 90º. O lado oposto ao ângulo reto é chamado de hipotenusa e os demais lados catetos. Outra característica importante a ser mencionar é que a hipotenusa é o maior lado neste tipo de triângulo.</p>
+            <p class='blueGhost'>O Teorema de Pitágoras pode ser expresso da seguinte forma: o quadrado da hipotenusa é igual à soma dos quadrados dos catetos. Na forma algébrica, essa expressão fica da seguinte forma: h2=a2+b2 , onde h é a hipotenusa e a e b são os catetos.</p>
+          </div>
+          <div>
+            <img src="assets/arte-03.png" alt="">
+          </div>
         </div>
       </div>
       <!----------------- Faixa ----------------->
@@ -152,7 +154,9 @@
             <div>
               <div>              
                 <span>Maior lado do triângulo retângulo, oposto ao ângulo reto</span>
-                <img src="assets/arte-04_b.png" alt="">
+                <div>
+                  <img src="assets/arte-04_b.png" alt="">
+                </div>
               </div>
             </div>
           </div>
@@ -161,7 +165,12 @@
         <div id='box3'></div>
 
         <div id='box4'>
-          <img src="assets/arte-04_a.png" alt="">
+          <img src="assets/arte-04_a_1.png" alt="">
+          <div>
+            <p>$$ (b+a)^2 = \frac{4ba}{2} + h^2 $$</p>
+            <p>$$ b^2 + 2ba + a^2 = 2ba + h^2 $$</p>
+            <p>$$ b^2 + a^2 = h^2 $$</p>
+          </div>
         </div>
       </div>
 
@@ -202,7 +211,7 @@
           </div>
         </div>
         <div>
-          <p>Esquema da situação:</p>
+          <p class='esquerda'>Esquema da situação:</p>
           <img src="assets/arte-10.png" alt="">
           <div>
             <p>Resolução:</p>
@@ -280,14 +289,78 @@
 
       <!-- Solução do exercício 1 -->
       <div class='container'>
-        <div>
-          <button class='colBtn collapsed' data-toggle="collapse" data-target="#colapse1">Botao Colapse</button>
-          <div id="colapse1" class='collapse colContent'>Conteúdo Collapse</div>
+        <button class='colBtn collapsed' data-toggle="collapse" data-target="#colapse1">
+          <span>Resolução da atividade 1</span>
+          <span class="btnTriang"></span>
+        </button>
+      </div>
+      <div class='container'>
+        <div id="colapse1" class='collapse colContent'>
+          <p>Pergunta a)</p>
+          <p>Utilizando Lei de cossenoss</p>
+          <div class='sec5ex1box1'>
+            <div>
+              <p class='form'>$$ BC^2 = AB^2 + AC^2 - 2.AB.AC.\cos(BAC) $$</p>
+              <p class='form'>$$ BC^2 = 28^2 + 36^2 - 2.28.36.\cos(135^o) $$</p>
+              <p class='form'>$$ BC = 59,21cm $$</p>
+            </div>
+            <div>
+              <img src="assets/arte-16.png" alt="">
+            </div>
+          </div>
+          <p>Pergunta b)</p>
+          <p>Na figura:</p>
+          <div class='sec5ex1box2'>
+            <div>
+              <p class='form'>$$ ABC = 180^o - 90^o - 45^o = 45^o $$</p>
+            </div>
+            <div>
+              <img src="assets/arte-17.png" alt="">
+            </div>
+          </div>
+          <p>Utilizando Lei de senos</p>
+          <p class='form'>$$ \frac{AB}{\sin(BCA)} = \frac{AC}{\sin(ABC)} = \frac{BC}{\sin(BAC)} $$</p>
+          <p class='form'>$$ \frac{28}{\sin(BCA)} = \frac{36}{\sin(45)} $$</p>
+          <p class='form'>$$ BCA = 33,37^o$$</p>
+          <p class='form'>$$ BAC = 180^o - 45^o -33,37^o = 101,63^o$$</p>
+          <p class='form'>$$ \frac{28}{\sin(33,37^o)} = \frac{BC}{\sin(101,63^o)}$$</p>
+          <p class='form'>$$ BC = 26,89cm $$</p>
         </div>
       </div>
 
-        <!-- Atividade 2 -->
+      <!-- Atividade 2 -->
+      <div class='container mrgTop50'>
+        <h4 class='subtitulo'>Atividade 2</h4>
+        <p>Lei de senos e lei de cossenos</p>
+        <p>Um estudante de engenharia deseja propor a construção de uma ponte sobre o Rio Tamanduateí (ver Figura 2), na Região Central de São Paulo, para facilitar a entrada e saída de carga do Mercado Municipal. Ele precisa entregar as medições aproximadas, mas não possui ferramentas para medir todas as distâncias mostradas na Figura 3.</p>
+        <p>Ele marcou um ponto B, calculou o ângulo BÂC que foi igual a 56°, caminhou até o ponto B, uma distância de 60 m, e calculou o ângulo ABC obtendo um ângulo de 47°.</p>  
+        <div id='sec5ex1box3'>
+          <div>
+            <img src="assets/arte-18.png" alt="">
+            <span>Rio Tamanduatei, São Paulo</span>
+            <span>https://commons.wikimedia.org/wiki/File:Rio_Tamantuate%C3%AD.jpg</span>
+          </div>
+          <div>
+            <img src="assets/arte-19.png" alt="">
+            <span>Vista satelital do Rio Tamanduatei, São Paulo.</span>
+            <span>Fonte: Elaborado no Google maps.</span>
+          </div>
+        </div>
+        <p>Calcule o comprimento da ponte.</p>
+        <p>Proponha outra alternativa para a construção da ponte enlaçando as ruas Comendador Assad Abdallah e Praça São Vito (figura 3).</p>
+        <p>Nota. Utilize as leis de senos, cossenos ou tangentes na resolução.</p>
+      </div>
 
+      <!-- Solução do exercício 2 -->
+      <div class='container'>
+        <button class='colBtn collapsed' data-toggle="collapse" data-target="#colapse2">
+          <span>Resolução da atividade 2</span>
+          <span class="btnTriang"></span>
+        </button>
+      </div>
+      <div class='container'>
+        <div id="colapse2" class='collapse colContent'>Conteúdo Collapse</div>
+      </div>        
       
     </section>
     
