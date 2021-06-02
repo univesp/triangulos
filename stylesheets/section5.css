@@ -1,6 +1,5 @@
 #section5{
     margin-top: 100px;
-    display: none;
 }
 #section5 img{
     max-width: 100%;
@@ -11,6 +10,7 @@
 .form{
     display: flex;
     margin-bottom: 0px;
+    overflow-x: scroll;
 }
 .sec5ex1box1, .sec5ex1box2{
     display: flex;
@@ -19,17 +19,49 @@
 .sec5ex1box1 > div:nth-of-type(1),
 .sec5ex1box2 > div:nth-of-type(1){
     margin-right: 50px;
+    overflow-x: scroll;
 }
-#sec5ex1box3{
+
+#sec5box1{
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
 }
-#sec5ex1box3 img{
-    flex-grow: 1;
+
+#sec5tab1 th, #sec5tab1 td{
+    padding: 10px 10px;
+    border-bottom:1px solid black;
+    border-right: 1px solid black;
 }
-#sec5ex1box3 > div{
-    width: 48%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+
+#sec5tab1 tr > td:nth-of-type(1), #sec5tab1 tr > th:nth-of-type(1){
+    border-left: 1px solid black;
+}
+
+#sec5tab1 th{
+    border-top: 1px solid black;
+}
+
+@media (max-width:992px) {
+    #sec5box1 {
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    #sec5box1 img{
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width:768px) {
+    .sec5ex1box1, .sec5ex1box2 {
+        flex-direction: column-reverse;
+        overflow-x: scroll;
+    }
+}
+
+@media (max-width:576px) {
+    #sec5box1 > div:nth-of-type(2){
+        width: 100%;
+        overflow-x: scroll;
+    }
 }

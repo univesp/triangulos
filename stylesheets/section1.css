@@ -1,7 +1,5 @@
-/*////////////////////// Seção 1 ///////////////////////////*/
-
-#section1 img{
-  max-width: 100%;
+#section1 img {
+  max-width: 850px;
 }
 #section1 .container{
   display: flex;
@@ -41,4 +39,9 @@
 }
 #section1 #menu a span:nth-of-type(2){
   z-index: 100;
+}
+@media (max-width:992px) {
+  #section1 img {
+    max-width: 100%;
+  }
 }

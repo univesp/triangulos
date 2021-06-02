@@ -1,0 +1,26 @@
+#section8{
+    margin-top: 50px;
+}
+#sec8box1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+#sec8box1 img{
+    width: 45%;
+    margin-bottom: 50px;
+}
+
+@media (max-width:768px) {
+    #sec8box1 img{
+        width: 75%;
+    }   
+}
+
+@media (max-width:576px) {
+    #sec8box1 img{
+        width: 90%;
+    }   
+}

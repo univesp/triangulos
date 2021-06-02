@@ -45,6 +45,9 @@
   <link rel="stylesheet" href="stylesheets/section3.css">
   <link rel="stylesheet" href="stylesheets/section4.css">
   <link rel="stylesheet" href="stylesheets/section5.css">
+  <link rel="stylesheet" href="stylesheets/section6.css">
+  <link rel="stylesheet" href="stylesheets/section7.css">
+  <link rel="stylesheet" href="stylesheets/section8.css">  
 </head>
 
 <body class="d-flex flex-column">
@@ -120,7 +123,7 @@
     </section>
 
     <!-- O que é o teorema de Pitágoras -->
-    <section id = 'section2'>
+    <section id='section2'>
       <div class='container'>
         <h3 class='titulo'>O que é o Teorema de Pitágoras?</h3>
         <div>
@@ -177,7 +180,7 @@
     </section>
 
     <!-- O que é a lei dos cossenos -->
-    <section id = 'section3'>
+    <section id='section3'>
       <!------------- Primeiro container ---------------->
       <div class='container'>
         <h3 class='titulo cosseno'>O que é a Lei dos Cossenos?</h3>
@@ -269,7 +272,7 @@
       </div>      
     </section>
 
-    <!-- Exemplo do uso da lei dos senos -->
+    <!-- Atividade 1 -->
     <section id='section5'>
       <div class='container'>
         <h3 class='titulo'>Atividades</h3>
@@ -282,8 +285,42 @@
         <p>Determine as distâncias entre os pontos A, B e C, em centímetros.</p>
         <p>Suponha que a competidora precisa refazer o tiro B. Altere a posição do ponto B e determine as novas distâncias entre os pontos A, B e C, em centímetros. Nota. Existe mais de uma resposta.</p>
         <p>Nota. Utilize as leis de senos, cossenos ou tangentes na resolução</p>
-        <div>
-          <img src="assets/arte-15.png" alt="">
+        <div id='sec5box1'>
+          <div>
+            <img src="assets/arte-15.png" alt="">
+          </div>
+          <div>
+            <table id='sec5tab1'>
+              <thead>
+                <tr>
+                  <th>d</th>
+                  <th>x</th>
+                  <th>y</th>
+                  <th>z</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Diâmetro do alvo</td>
+                  <td>Zona colorida</td>
+                  <td>Zona de pontuação</td>
+                  <td>Diâmetro do 10 Interno</td>
+                </tr>
+                <tr>
+                  <td>122cm</td>
+                  <td>12,2cm</td>
+                  <td>6,1cm</td>
+                  <td>6,1cm</td>
+                </tr>
+                <tr>
+                  <td>80cm</td>
+                  <td>8cm</td>
+                  <td>4cm</td>
+                  <td>4cm</td>
+                </tr>
+              </tbody>
+              </table>
+          </div>
         </div>
       </div>  
 
@@ -326,19 +363,22 @@
           <p class='form'>$$ \frac{28}{\sin(33,37^o)} = \frac{BC}{\sin(101,63^o)}$$</p>
           <p class='form'>$$ BC = 26,89cm $$</p>
         </div>
-      </div>
-
+      </div>      
+    </section>
+    
+    <!-- Atividade 2 -->
+    <section id='section6'>
       <!-- Atividade 2 -->
       <div class='container mrgTop50'>
         <h4 class='subtitulo'>Atividade 2</h4>
         <p>Lei de senos e lei de cossenos</p>
         <p>Um estudante de engenharia deseja propor a construção de uma ponte sobre o Rio Tamanduateí (ver Figura 2), na Região Central de São Paulo, para facilitar a entrada e saída de carga do Mercado Municipal. Ele precisa entregar as medições aproximadas, mas não possui ferramentas para medir todas as distâncias mostradas na Figura 3.</p>
         <p>Ele marcou um ponto B, calculou o ângulo BÂC que foi igual a 56°, caminhou até o ponto B, uma distância de 60 m, e calculou o ângulo ABC obtendo um ângulo de 47°.</p>  
-        <div id='sec5ex1box3'>
+        <div id='sec6ex1box3'>
           <div>
             <img src="assets/arte-18.png" alt="">
             <span>Rio Tamanduatei, São Paulo</span>
-            <span>https://commons.wikimedia.org/wiki/File:Rio_Tamantuate%C3%AD.jpg</span>
+            <span>https://commons.wikimedia.org/wiki/File:Rio_Tamantuateí.jpg</span>
           </div>
           <div>
             <img src="assets/arte-19.png" alt="">
@@ -346,8 +386,8 @@
             <span>Fonte: Elaborado no Google maps.</span>
           </div>
         </div>
-        <p>Calcule o comprimento da ponte.</p>
-        <p>Proponha outra alternativa para a construção da ponte enlaçando as ruas Comendador Assad Abdallah e Praça São Vito (figura 3).</p>
+        <p><b>a)</b> Calcule o comprimento da ponte.</p>
+        <p><b>b)</b> Proponha outra alternativa para a construção da ponte enlaçando as ruas Comendador Assad Abdallah e Praça São Vito (figura 3).</p>
         <p>Nota. Utilize as leis de senos, cossenos ou tangentes na resolução.</p>
       </div>
 
@@ -359,13 +399,106 @@
         </button>
       </div>
       <div class='container'>
-        <div id="colapse2" class='collapse colContent'>Conteúdo Collapse</div>
-      </div>        
-      
-    </section>
+        <div id="colapse2" class='collapse colContent'>
+          <div>
+            <div>
+              <p>Pergunta a)</p>
+              <p>1. Na figura</p>
+              <p class='form'>$$ BCA = 180^o - 56^o - 47^o = 77^o$$</p>
+              <p>2. Lei de senos</p>
+              <p class='form'>$$ \frac{AB}{\sin(BCA)} = \frac{AC}{\sin(ABC)} = \frac{BC}{\sin(BAC)}$$</p>
+              <p>Pergunta b)</p>
+              <p>1. Lei de cossenos</p>
+            </div>
+            <div>
+              <img src="assets/arte-20.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  
     
-    <!-- Atividades -->
-    <section></section>    
+    <!-- Atividade 3 -->
+    <section id='section7'>
+      <!-- Ativade 3 enunciado -->
+      <div class='container'>
+        <h4 class="subtitulo">Atividade 3</h4>
+        <p>Lei dos cossenos</p>
+        <p>Mateus está no ponto C e deseja visitar dois amigos que moram nos pontos A e B. Sabendo que α=36°, AC = 70km e BC = 60km, determine a melhor estratégia para encontrar a distância entre os pontos A e B, de maneira que Mateus siga pelo menor caminho.</p>
+        <img src="assets/arte-22.png" alt="">
+        <p>(a) Lei dos Senos</p>
+        <p>(b) Teorema de Pitágoras</p>
+        <p>(c) Lei dos Cossenos</p>
+        <p>(d) Lei das Tangentes</p>
+      </div>
+
+
+      <!-- Solução do exercício 3 -->
+      <div class='container'>
+        <button class='colBtn collapsed' data-toggle="collapse" data-target="#colapse3">
+          <span>Resolução da atividade 3</span>
+          <span class="btnTriang"></span>
+        </button>
+      </div>
+      <div class='container'>
+        <div id="colapse3" class='collapse colContent'>
+          <p>Item (c)</p>
+          <p>A ideia geral da atividade é que após a leitura do material, possa ser entendido que esta é uma aplicação da Lei dos cossenos.</p>
+          <p>Após aplicar a Lei dos cossenos através da fórmula</p>
+          <p class='form'>$$(AB)^2 = (AC)^2 + (BC)^2 - 2 \times (AC) \times (BC) \times cos \alpha $$</p>
+          <p class='form'>$$(AB)^2 = 70^2 + 60^2 - 2 \times 70 \times 60 \times cos36^o $$</p>
+          <p class='form'>$$(AB)^2 = 4900 + 3600 - 8400 \times 0.8$$</p>
+          <p class='form'>$$(AB)^2 = 1780$$</p>
+          <p class='form'>$$\text{Temos: }AB = 42.19km$$.</p> 
+        </div>
+      </div>
+    </section>
+
+    <!-- Atividade 4 -->
+    <section id='section8'>
+
+      <!-- Ativade 4 enunciado -->
+      <div class='container'>
+        <h4 class="subtitulo">Atividade 4</h4>
+        <p>Hoje somos estagiários/as da engenheira civil Andressa. Andressa está construindo uma escada para seu próximo projeto.</p>
+        <p>Para os cálculos ela está usando a fórmula de Blondel:
+        <p>$$(2E+P=64cm)$$</p>
+        <p>onde E é o tamanho do espelho (altura do degrau) e P é o tamanho do piso (largura do degrau).</p>
+        <p>A fórmula de Blondel é usada visando o conforto para pessoas que sobem e descem a escada.</p>
+        <p>Como especificações do projeto, P = 30cm e a altura entre os andares que a escada ficará é A = 300cm (3mts).</p>
+        <p>Seguindo as orientações da engenheira Andressa faça os seguintes cálculos:</p>
+        <ol>
+          <li>Obtenha o tamanho E dos espelhos da escada pela fórmula de Blondel (2E+P=64cm).</li>
+          <li>Sabendo que a altura entre os andares é A=300cm, calcule o número de espelhos (NE=A/E).</li>
+          <li>Com o número de espelhos NE, obtenha o número de pisos da escada (NP=NE-1).</li>
+          <li>Para saber o tamanho horizontal D (em cm) que a escada ocupará, faça a conta D = NP*30.</li>
+          <li>Para finalizar nossa escada, use o Teorema de Pitágoras para obter o tamanho da hipotenusa H (em cm) do triangulo retângulo formado pela escada.</li>
+        </ol>
+        <div id='sec8box1'>
+          <img src="assets/arte-23.png" alt="">
+          <img src="assets/arte-24.png" alt="">
+        </div>
+      </div>
+
+      <!-- Solução do exercício 3 -->
+      <div class='container'>
+        <button class='colBtn collapsed' data-toggle="collapse" data-target="#colapse4">
+          <span>Resolução da atividade 4</span>
+          <span class="btnTriang"></span>
+        </button>
+      </div>
+      <div class='container'>
+        <div id="colapse4" class='collapse colContent'>
+          <p>Vamos seguir os passos descritos na atividade:</p>
+          <ol>
+            <li>Usando a fórmula de Blondel (2E+P=64cm) com P = 30cm, temos 2E+30=64cm, isto é, 2E=34cm. Ou seja, E=17cm.</li>
+            <li>Sabendo que o número de espelhos são dados pela fórmula (NE=A/E), substituindo A=300cm e E=17cm, obtemos NE=300/17=17.64. Como o número de espelhos deve ser um número inteiro, um truque que a engenheira Andressa nos diz é o seguinte: Vamos escolher E=17.64cm, de maneira que os espaços dos degraus sejam igualmente espaçados, e NE=17. Assim não mudaremos muito o conforto da escada pois 2E+P= 65.28cm.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+
   </main>
 
   <!-- RODAPÉ -->

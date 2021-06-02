@@ -1,0 +1,9 @@
+#section7{
+    margin-top: 50px;
+}
+#section7 img{
+    max-width: 100%;
+}
+#section7 .container:nth-of-type(1) img{
+    margin: 25px auto;
+}
