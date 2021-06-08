@@ -93,7 +93,7 @@
   justify-content: center;
   flex-direction: column;
 }
-#box2 > div:nth-of-type(1) > p:nth-of-type(1){font-weight: bold;color: #004369;font-size: 3rem;margin-bottom: 0px;}
+#box2 > div:nth-of-type(1) > p:nth-of-type(1){font-weight: bold;color: #004369;font-size: 3rem;margin-bottom: 0px;overflow-wrap: break-word;max-width: 100%;}
 #box2 > div:nth-of-type(1) > p:nth-of-type(2){font-weight: bold;font-size: 2.5rem;}
 #box2 > div:nth-of-type(1) > div{
   position: absolute;
@@ -191,6 +191,14 @@
 @media (max-width:420px) {
   #box4 img {
     width: 85%;
+  }
+  #box2 > div:nth-of-type(1) > div > div {
+    max-width: 100%;
+    overflow-x: scroll;
+  }
+  #box4{
+    max-width: 100%;
+    overflow-x: scroll;
   }
 }
 

@@ -79,7 +79,9 @@ nav .nav-link {
 .titulo{
     font-family: 'Indie Flower', cursive;
     color: #1b9da1;
-    font-size: 2rem;
+    font-size: 3rem;
+    max-width: 100%;
+    overflow-wrap: break-word;
 }
 .subtitulo{
     color:#db1f48;
@@ -109,7 +111,7 @@ nav .nav-link {
 }
 #principal{
     text-decoration: underline;
-    font-size: 2.5rem;
+    text-align: center;
 }
 .faixa{
     width: 100%;
@@ -126,7 +128,7 @@ nav .nav-link {
 }
 .faixa::before{
     content: ' ';
-    height: 15px;
+    height: 10px;
     background-image: url(../assets/triangulinho.png);
     width: 100%;
     position: absolute;
@@ -134,7 +136,7 @@ nav .nav-link {
 }
 .faixa::after{
     content: ' ';
-    height: 15px;
+    height: 10px;
     background-image: url(../assets/triangulinho.png);
     width: 100%;
     position: absolute;
@@ -162,19 +164,17 @@ nav .nav-link {
 .colBtn{
     background: none;
     color: inherit;
-    border: none;
-    padding: 0;
     font: inherit;
     cursor: pointer;
     outline: inherit;
     width: 100%;
     border: 1px solid black;
-    border-bottom: 1px solid white;
     box-sizing: content-box;
     padding: 10px;
     display: flex;
     align-items: center;
     margin-top: 50px;
+    background-color: #f2f2f2;
 }
 .colBtn > span:nth-of-type(1){
     margin-right: 10px;
@@ -194,20 +194,20 @@ nav .nav-link {
     padding: 10px;
 }
 .colBtn.collapsed .btnTriang{
-    clip-path: polygon(0 0, 0% 100%, 100% 50%);
-    width: 15px;
-    height: 15px;
-    background-color: black;
+    content: url(../assets/play_arrow.svg);
+    height: 16px;
+    width: 16px;
+    flex-shrink: 0;
     transform: rotate(0deg);
-    transition: 0.2s;
+    transition: .3s;
 }
 .colBtn .btnTriang{
-    clip-path: polygon(0 0, 0% 100%, 100% 50%);
-    width: 15px;
-    height: 15px;
-    background-color: black;
+    content: url(../assets/play_arrow.svg);
+    height: 16px;
+    width: 16px;
+    flex-shrink: 0;
     transform: rotate(90deg);
-    transition: 0.2s;
+    transition: .3s;
 }
 
 @media (max-width:576px) {
@@ -216,5 +216,8 @@ nav .nav-link {
     }
     .cosseno::before {
         content: " ";
+    }
+    .subtitulo::before {
+        display: none;
     }
 }

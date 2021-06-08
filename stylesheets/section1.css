@@ -27,6 +27,8 @@
   height: 90px;
   margin-bottom: 25px;
   cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
 #section1 #menu a span:nth-of-type(1){
   position: absolute;

@@ -4,22 +4,26 @@
 #sec6ex1box3{
     display: flex;
     justify-content: space-around;
+    align-items: stretch;
+    flex-direction: row;
 }
 #sec6ex1box3 img{
     flex-grow: 1;
 }
 #sec6ex1box3 > div{
     width: 48%;
-    height: 100%;
     display: flex;
     flex-direction: column;
+}
+#sec6ex1box3 span{
+    overflow-wrap: break-word;
 }
 #section6 .colContent > div{
     display: flex;
 }
 #section6 .colContent > div > div:nth-of-type(1){
     margin-right: 25px;
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 #section6 .colContent > div > div:nth-of-type(2){
     display: flex;
@@ -35,6 +39,10 @@
     max-width: 220px;
 }
 
+#colapse2 .form{
+    overflow-x: auto;
+}
+
 @media (max-width:992px) {
     
 }
@@ -45,12 +53,17 @@
     #sec6ex1box3 > div {
         width: 100%;
         margin-bottom: 25px;
-        overflow-x: scroll;
     }
     #section6 .colContent > div {
         flex-direction: column-reverse;
     }
     #section6 .colContent > div > div:nth-of-type(2) {
         margin-bottom: 25px;
+    }
+}
+
+@media (max-width:576px) {
+    #sec6ex1box3 > div {
+        overflow-x: scroll;
     }
 }
