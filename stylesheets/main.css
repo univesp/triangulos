@@ -148,7 +148,7 @@ nav .nav-link {
     justify-content: space-around;
     position: relative;
     margin: 50px 0px;
-    padding: 50px 0px;
+    padding: 25px 0px;
 }
 
 .faixa iframe {
@@ -173,6 +173,20 @@ nav .nav-link {
     position: absolute;
     top: 100%;
     transform: rotate(180deg);
+}
+
+.faixa > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+.faixa p{
+    width: 332px;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-left: 20px;
 }
 
 .cosseno {

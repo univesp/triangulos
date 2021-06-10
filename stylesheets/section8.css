@@ -12,10 +12,10 @@
     width: 45%;
     margin-bottom: 50px;
 }
-
-#colapse4 .lista-custom li{
-    overflow-x: scroll;
+#colapse4 .lista-custom p{
+   margin-bottom: 7px;
 }
+
 
 @media (max-width:768px) {
     #sec8box1 img{
@@ -26,5 +26,8 @@
 @media (max-width:576px) {
     #sec8box1 img{
         width: 90%;
+    }
+    #colapse4 .lista-custom li{
+        overflow-x: scroll;
     }   
 }
