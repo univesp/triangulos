@@ -53,6 +53,10 @@ nav .nav-link {
     color: white;
 }
 
+.mrgTop25{
+    margin-top: 25px;
+}
+
 .mrgTop50 {
     margin-top: 50px;
 }
@@ -201,8 +205,8 @@ nav .nav-link {
     outline: inherit;
     width: 100%;
     border: 1px solid black;
-    box-sizing: content-box;
-    padding: 10px;
+    box-sizing: border-box;
+    padding: 10px 0px;
     display: flex;
     align-items: center;
     margin-top: 50px;
@@ -211,6 +215,7 @@ nav .nav-link {
 
 .colBtn>span:nth-of-type(1) {
     margin-right: 10px;
+    margin-left: 10px;
 }
 
 .colBtn.collapsed {
@@ -225,9 +230,13 @@ nav .nav-link {
 .colContent {
     border: 1px solid black;
     border-top: 0px;
-    box-sizing: content-box;
+    box-sizing: border-box;
     width: 100%;
-    padding: 10px;
+    padding: 10px 0px;
+}
+
+.colContent > *{
+    margin-left: 10px;
 }
 
 .colBtn.collapsed .btnTriang {
@@ -253,6 +262,7 @@ nav .nav-link {
     font-size: 1.2em;
     font-weight: bold;
 }
+
 /* LISTAS CUSTOMIZADAS */
 ul li,
 ol li {
@@ -309,19 +319,6 @@ ol.lista-custom>li:before {
     font-style: italic;
     font-size: 0.9em;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width:576px) {
     .seno::before {
         content: " ";
@@ -333,5 +330,13 @@ ol.lista-custom>li:before {
 
     .subtitulo::before {
         display: none;
+    }
+    .lista-custom{
+        padding-left: 4px;
+    }
+}
+@media (max-width:420px) {
+    .lista-custom{
+        padding-left: 0px;
     }
 }

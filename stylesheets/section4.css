@@ -89,6 +89,8 @@
         padding: 0px 15px;
         margin-top: 50px;
         width: 100%;
+        max-width: 540px;
+        margin: 0 auto;
     }
     #section4 .retang::before {
         clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
