@@ -39,6 +39,10 @@
     }
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .esquerda {
     width: 100%;
     text-align: left;
@@ -50,6 +54,22 @@ nav .logo img {
 
 nav .nav-link {
     background-color: #004369;
+    color: white;
+}
+
+nav .nav-link:focus, nav .nav-link:hover, nav .nav-link[aria-expanded="true"] {
+    background-color: #004369;
+    color: white;
+}
+
+nav .jssocials-shares{
+    background-color: #004369; 
+}
+
+nav .jssocials-share-facebook .jssocials-share-link,
+nav .jssocials-share-twitter .jssocials-share-link,
+nav .jssocials-share-whatsapp .jssocials-share-link
+{
     color: white;
 }
 

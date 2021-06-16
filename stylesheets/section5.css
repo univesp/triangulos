@@ -40,15 +40,15 @@
 }
 
 #sec5tab1 th, #sec5tab1 td{
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
 }
 #sec5tab1 th{
-    border-top: 1px solid black;
+    border-top: 2px solid black;
 }
 #sec5tab1 th:nth-of-type(1),
 #sec5tab1 td:nth-of-type(1){
-    border-left: 1px solid black;
+    border-left: 2px solid black;
 }
 
 
